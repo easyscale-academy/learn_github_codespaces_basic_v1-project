@@ -1,5 +1,5 @@
 ---
-description: "学完这个 mini task, 你能看懂 GitHub Codespaces 的 compute 与 storage 两种账单, 分清 Stop 与 Delete 的适用场景, 并把免费额度和自动删除规则用成几条省钱习惯, 顺带建立起对云服务按需计费模型的通用直觉."
+description: "学完这个 mini task, 你能看懂 GitHub Codespaces 的 compute 与 storage 两种账单, 会在额度不够时升级或按量付费并给自己设好月度预算上限, 分清 Stop 与 Delete 的适用场景, 并把免费额度和自动删除规则用成几条省钱习惯, 顺带建立起对云服务按需计费模型的通用直觉."
 ---
 
 # GitHub Codespaces: 费用, 管理与最佳实践
@@ -18,9 +18,10 @@ Codespaces 是一种典型的云服务, 它不是你买断的电脑, 而是按�
 
 1. 判断 GitHub 免费账户的 compute 和 storage 额度, 对自己的学习和个人项目来说是否够用
 2. 区分 compute 和 storage 两种独立账单, 分别在什么时候触发计费
-3. 根据场景选择 Stop 还是 Delete, 并养成删除前先确认代码已经 push 的习惯
-4. 理解 Codespaces 30 天无操作自动删除的默认行为, 以及它对未推送代码的风险
-5. 掌握几条可以立刻落地的省钱习惯, 并把这套思维方式迁移到其他云服务
+3. 在额度不够用时选择升级 Pro 或按量付费, 并知道必须先设好月度预算上限才不会收到意外账单
+4. 根据场景选择 Stop 还是 Delete, 并养成删除前先确认代码已经 push 的习惯
+5. 理解 Codespaces 30 天无操作自动删除的默认行为, 以及它对未推送代码的风险
+6. 掌握几条可以立刻落地的省钱习惯, 并把这套思维方式迁移到其他云服务
 
 ---
 
@@ -46,7 +47,11 @@ Codespaces 是一种典型的云服务, 它不是你买断的电脑, 而是按�
 | GitHub Free | 120 | 15 GB-month |
 | GitHub Pro | 180 | 20 GB-month |
 
-这里有一个几乎所有人第一次都会算错的地方: 上面那个 120 不是你能用 120 小时的意思.
+这两个数字在 GitHub 自己的界面上也能查到. 打开 Settings, 进入 Billing and licensing 下面的 Licensing 页面, 就能看到当前账户的套餐和它包含的东西:
+
+![在 Licensing 页面查看当前套餐包含的额度](./img/07-manage-cost-2.png)
+
+注意图里那一行的原文是 120 core-hours, 也就是 120 个核心小时. 这个词很关键, 因为它揭示了一个几乎所有人第一次都会算错的地方: 上面那个 120 不是你能用 120 小时的意思.
 
 每种机器配置都有一个倍率, 倍率等于它的核数. 你实际消耗的额度, 是运行小时数乘以这个倍率. 换句话说, 哪怕是最小的 2-core 机器, 跑一小时也要扣 2 个额度, 而不是 1 个:
 
@@ -97,7 +102,37 @@ storage 按占用空间收费. 只要 Codespace 还存在, 不管是运行中还
 
 ---
 
-## 7. Stop 与 Delete: 怎么选
+## 7. 额度不够用怎么办: 升级与预算上限
+
+如果你用得比较多, 60 小时可能撑不到月底. 这时候有两条路, 而且它们可以叠加.
+
+一条是升级到 GitHub Pro, 每月 4 美元, 额度从 120 涨到 180 core-hours, 折合 2-core 机器就是从 60 小时涨到 90 小时. 升级入口就在刚才那个 Licensing 页面, 右上角有一个 Upgrade to GitHub Pro 按钮.
+
+另一条是超出免费额度之后按量付费, 也就是前面那张价目表, 2-core 每小时 $0.18. 这条路很方便, 但它藏着这一篇里最需要警惕的一个默认行为.
+
+打开 Settings, 进入 Billing and licensing 下面的 Budgets and alerts 页面, 你会看到 GitHub 把这件事写得很直白:
+
+![Budgets and alerts 页面, 注意说明文字里的 unlimited](./img/07-manage-cost-3.png)
+
+图里那句说明的原文是: 如果没有为某个产品设置 budget, 这个产品的用量就是 unlimited. 换句话说, 默认状态下你是没有刹车的. 一个忘了关的 Codespace 会一直计费, 一个月跑出几十美元并不难, 而你可能要等到账单来了才发现.
+
+这个页面按产品分行, Codespaces, Actions, Packages 各占一条, 互不影响, 所以你要盯的是 Codespaces 那一行. 每行右边会显示这个月已经花了多少, 预算是多少, 以及 Stop usage 这一列是不是 Yes.
+
+要新建一条预算, 点右上角的 New budget; 如果 Codespaces 已经有一条, 从它右侧的 `...` 菜单进去编辑就行. 两条路径打开的是同一个表单:
+
+![设置 Codespaces 的月度预算上限](./img/07-manage-cost-4.png)
+
+表单上有几个地方需要留意:
+
+Product 选 Codespaces, Budget scope 保持 Account, 这样你名下所有仓库的 Codespaces 花费都算在这一条预算里. Budget amount 填一个你能接受的数字, 比如 30. 下面那个 Stop usage when budget limit is reached 一定要勾上, 它才是真正的刹车, 意思是花到这个数就停止提供服务; 不勾的话预算就只是一个观察指标, 拦不住任何东西. 最下面的 Alerts 保持开启, GitHub 会在用量达到 75%, 90% 和 100% 时给你发邮件.
+
+还有一点: 如果页面顶部提示 Payment method is missing, 说明你还没绑定支付方式, 得先添加一张能付美元的信用卡才能保存预算. 这一步看起来有点反直觉, 明明是为了少花钱却要先绑卡, 但逻辑是通的: GitHub 需要先知道往哪收费, 才谈得上给这笔收费设上限.
+
+设完之后你可以在 Billing and licensing 下面的 Usage 页面随时查看本月已经消耗了多少, 离预算还有多远. 建议每周看一眼, 养成习惯之后基本不会再有意外.
+
+---
+
+## 8. Stop 与 Delete: 怎么选
 
 这是管理 Codespaces 最核心的判断.
 
@@ -111,7 +146,7 @@ Delete 相当于把这台机器直接扔掉: 里面的一切都不复存在, 下
 
 ---
 
-## 8. 自动删除: GitHub 帮你清理
+## 9. 自动删除: GitHub 帮你清理
 
 GitHub 会自动删除长期闲置的 Codespace, 不需要你手动操心. 根据 [官方文档](https://docs.github.com/en/codespaces/setting-your-user-preferences/configuring-automatic-deletion-of-your-codespaces), 默认规则是: 一个 Codespace 连续 30 天无操作会被自动删除, 删除前 24 小时会发邮件提醒, 只要重新打开过一次, 计时器就会重置, 保留期限也可以在设置里调整, 范围是 0 到 30 天.
 
@@ -119,7 +154,7 @@ GitHub 会自动删除长期闲置的 Codespace, 不需要你手动操心. 根�
 
 ---
 
-## 9. 最佳实践: 省钱省心的习惯
+## 10. 最佳实践: 省钱省心的习惯
 
 把前面几节的知识落成几条日常习惯, 长期坚持下来能省下不少额度:
 
@@ -131,7 +166,7 @@ GitHub 会自动删除长期闲置的 Codespace, 不需要你手动操心. 根�
 
 ---
 
-## 10. 练习
+## 11. 练习
 
 目标: 对着自己真实的 Codespaces 账户做一次巡查和清理, 把上面几节的知识落到自己的账户上.
 
@@ -149,17 +184,18 @@ GitHub 会自动删除长期闲置的 Codespace, 不需要你手动操心. 根�
 
 ---
 
-## 11. 回顾: 我们学到了什么
+## 12. 回顾: 我们学到了什么
 
 - 免费额度: Free 账户每月 120 个 compute 额度加 15GB storage, 额度按核数扣, 用 2-core 机器折合大约 60 小时.
 - 两种账单: compute 只在运行时计费, storage 只要 Codespace 存在就一直计费.
+- 额度不够用: 可以升级 Pro (每月 4 美元, 2-core 折合 90 小时), 也可以按量付费; 但按量付费之前必须先设月度预算上限, 因为不设就是 unlimited, 等于没有刹车.
 - Stop 与 Delete: Stop 是暂停, 还占 storage; Delete 是彻底清空, 什么都不再计费; 删除前一定要先 push.
 - 自动清理: GitHub 会在 30 天无操作后自动删除 Codespace, 只要代码已经 push 就不必担心.
 - 省钱习惯: 用完就 Stop, 用够用的最小机器, 频繁 push, 定期清理, 始终用分支加 PR.
 
 ---
 
-## 12. 导师寄语
+## 13. 导师寄语
 
 搞懂 Codespaces 的计费方式, 你其实是在学一件更通用的事情: 按需计费的云服务定价模型是怎么运作的. 老式的模式是买一台电脑, 一次性付钱, 不管用不用都是你的; 按需计费的模式是你租用计算资源, 用多少付多少, 不用就不花钱. 这个转变听起来简单, 但它是理解几乎所有现代云平台账单的起点.
 
@@ -171,9 +207,11 @@ GitHub 会自动删除长期闲置的 Codespace, 不需要你手动操心. 根�
 
 ---
 
-## 13. 速查
+## 14. 速查
 
 **账单速查:** compute 按运行小时数乘以机器核数扣额度 (2-core 起价 $0.18/ 小时), storage 按 GB-month 计费 ($0.07/GB/ 月), Stop 只省 compute, Delete 才两者都省.
+
+**设预算上限:** Settings → Billing and licensing → Budgets and alerts → New budget, Product 选 Codespaces, 填 Budget amount, 务必勾上 Stop usage when budget limit is reached. 不设预算等于不限额.
 
 **关键链接:**
 

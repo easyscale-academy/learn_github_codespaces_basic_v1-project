@@ -18,7 +18,8 @@ Codespaces 是按需计费的云资源, 不搞清楚计费规则, 很容易要�
 4. 如果手上有正在运行的 Codespace, 用状态栏菜单或管理面板把它 Stop 一次.
 5. 确认某个 Codespace 的代码已经全部 push 到 GitHub 之后, 把它 Delete 掉, 完成一次清理.
 6. 在任意 repo 里用 New with options 创建一个新的 Codespace, 手动选择 2-core 机器和离自己近的 region.
-7. 用自己的话把下面四个问题的答案写下来, 准备好讲给导师或同学听: 清理前后 Codespaces 数量各是多少; 之前的 Codespaces 用的是什么机器配置, 有没有比 2-core 更大的; Stop 和 Delete 的区别用自己的话怎么说; 为什么删除前必须先 push.
+7. 打开 Settings 里的 Budgets and alerts 页面看一眼, 确认自己名下有没有给 Codespaces 设过预算. 如果你打算超出免费额度继续用, 就设一条, 金额填一个能接受的数字, 并勾上 Stop usage when budget limit is reached.
+8. 用自己的话把下面四个问题的答案写下来, 准备好讲给导师或同学听: 清理前后 Codespaces 数量各是多少; 之前的 Codespaces 用的是什么机器配置, 有没有比 2-core 更大的; Stop 和 Delete 的区别用自己的话怎么说; 为什么删除前必须先 push.
 
 **预计用时:** 15 到 20 分钟
 
@@ -29,6 +30,7 @@ Codespaces 是按需计费的云资源, 不搞清楚计费规则, 很容易要�
 - [ ] **读完教程**: 完整读完对应的 README, 理解免费额度, compute 与 storage 两种账单, Stop 与 Delete 的区别, 以及自动删除规则.
 - [ ] **算清免费额度**: 能说出 Free 账户每月是 120 个 compute 额度加 15GB storage, 且知道额度按机器核数扣, 用 2-core 折合下来只有大约 60 小时.
 - [ ] **分清两种账单**: 能解释清楚 compute 只在运行时计费, storage 只要 Codespace 存在就一直计费.
+- [ ] **知道额度不够怎么办**: 说得出升级 Pro 和按量付费两条路, 并且明白不设预算上限就等于不限额, 以及 Stop usage 那个勾选框才是真正的刹车.
 - [ ] **巡查过自己的 Codespaces**: 打开管理面板, 数清楚自己名下 Codespaces 的数量与状态, 并检查过至少一个的机器配置.
 - [ ] **练过 Stop**: 用状态栏菜单或管理面板成功 Stop 过一个 Codespace.
 - [ ] **练过 Delete**: 在确认代码已 push 之后, 成功 Delete 过一个不再需要的 Codespace.
