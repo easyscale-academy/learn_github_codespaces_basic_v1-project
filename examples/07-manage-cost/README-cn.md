@@ -68,7 +68,7 @@ Codespaces 是一种典型的云服务, 它不是你买断的电脑, 而是按�
 - 直接点击 Create codespace on main, 会使用默认机器配置
 - 点击旁边的 ..., 选择 New with options..., 可以自己挑
 
-![create-codespace-with-configuration](./img/06-manage-cost-1.png)
+![create-codespace-with-configuration](./img/07-manage-cost-1.png)
 
 在 New with options... 里, 你可以设置:
 
