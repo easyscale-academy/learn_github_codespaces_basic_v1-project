@@ -27,7 +27,7 @@ Codespaces 是按需计费的云资源, 不搞清楚计费规则, 很容易要�
 ## 3. 检查清单
 
 - [ ] **读完教程**: 完整读完对应的 README, 理解免费额度, compute 与 storage 两种账单, Stop 与 Delete 的区别, 以及自动删除规则.
-- [ ] **算清免费额度**: 能说出 Free 账户每月 120 compute 小时加 15GB storage, 且知道这个数字是以 2-core 机器为基准的.
+- [ ] **算清免费额度**: 能说出 Free 账户每月是 120 个 compute 额度加 15GB storage, 且知道额度按机器核数扣, 用 2-core 折合下来只有大约 60 小时.
 - [ ] **分清两种账单**: 能解释清楚 compute 只在运行时计费, storage 只要 Codespace 存在就一直计费.
 - [ ] **巡查过自己的 Codespaces**: 打开管理面板, 数清楚自己名下 Codespaces 的数量与状态, 并检查过至少一个的机器配置.
 - [ ] **练过 Stop**: 用状态栏菜单或管理面板成功 Stop 过一个 Codespace.
