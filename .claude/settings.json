@@ -42,7 +42,7 @@
             "source": {
                 "source": "github",
                 "repo": "MacHu-GWU/sanhe_claude_code_plugin_marketplace-project",
-                "ref": "0.4.6"
+                "ref": "0.4.7"
             }
         }
     },
