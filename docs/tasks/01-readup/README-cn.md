@@ -1,0 +1,36 @@
+---
+description: "学习用 GitHub Codespaces 在浏览器里干活: 启动与管理 Codespace, 认全 VS Code 界面, 完成 commit 与 push, 用 branch 加 Pull Request 走通协作流程, 收拾日常用分支最容易卡住的地方, 并看懂 compute 与 storage 计费, 给自己设预算上限. 读完你能独立走完一次完整的开发循环, 并判断新任务该在本地做还是在云端做."
+---
+
+# GitHub Codespaces 入门总览
+
+> 一句话: 这门课教你用 GitHub Codespaces 在浏览器里搭起开发环境, 并在里面走通 Git 的核心工作流. 想先了解全貌, 看 [README-ORIGINAL-cn.md](README-ORIGINAL-cn.md).
+
+## 1. 这门课是什么
+
+配置开发环境是初学者卡最久的地方, 尤其手上只有 Windows 电脑的时候. GitHub Codespaces 把整个环境搬到云端, 打开浏览器就有一台配置好的 Linux 机器, 本地什么都不用装. 这门课带你把它真正用起来, 并在里面完成开发者每天都在做的那套动作, 全程不需要敲一条 Git 命令.
+
+这是一个 readup 类型的教学仓库: 整个 repo 就是一门课, 内容拆成 [examples/](examples/) 下一个个按编号排列的 mini task. 你不用把它当成一本从头读到尾的大部头, 只要照下面 "怎么读" 的路子, 一篇篇顺着读下来, 边读边照每篇的 TICKET 做, 就能学会.
+
+---
+
+## 2. 怎么读
+
+1. 先读 [examples/README-cn.md](examples/README-cn.md) 的系列索引, 对整门课有张地图, 知道 8 篇 mini task 分成哪三块.
+2. 按编号顺序读 examples 下的 mini task (01, 02, ...): 每个目录里, 先读 README 看这一篇教什么, 再照它的 TICKET 把 "要做的事情" 逐项做完, 用 "检查清单" 自查是不是真的做到了.
+3. 一篇读完再读下一篇, 不要跳着读. 前面几篇的操作是后面几篇的地基, 尤其 04 到 06 这条 Git 主线是层层递进的.
+4. 中间有几篇需要你打开自己真实的 GitHub 账号动手做, 建议边读边做, 而不是先读完再回头补.
+5. 读完最后一篇, 它会帮你把整条工作流串起来, 并给出一个判断: 以后新任务该在本地做还是在云端做.
+6. 读到什么算成: 每个 mini task 的 TICKET 检查清单都能逐项打勾, 且能不看教程自己把一次完整的开发循环走一遍.
+
+---
+
+## 3. 课程内容
+
+全部 mini task 按主题梳理在 [examples/README-cn.md](examples/README-cn.md) 里, 从那儿进入.
+
+---
+
+## 4. 读完你能做到什么
+
+你能独立开出一个云端开发环境并管好它的开销, 能在里面完成从改代码, commit, push 到开分支, 提 Pull Request, 合并回 main 的完整循环, 也知道遇到分支状态不明时该看哪里. 更重要的是, 这套工作流不绑定 Codespaces, 换到本地的 VS Code 或 GitHub Desktop 几乎没有迁移成本.
