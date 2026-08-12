@@ -8,6 +8,8 @@ description: "通过亲手启动, 使用, 停止, 重启并删除一个 GitHub C
 
 配置开发环境, 是初学者遇到的最大障碍之一. 不同操作系统, 互相冲突的软件版本, 缺失的 PATH 配置, 这些问题足以让你在写下第一行代码之前就耗掉好几天. 云端开发环境的出现, 就是为了解决这个问题: 它在浏览器里给你一个随开随用, 配置一致的开发环境.
 
+---
+
 ## 2. 学习目标
 
 想象一下这个场景: 你刚开始学编程, 兴冲冲地想跟着教程写第一行代码. 教程说, 第一步, 安装 Python. 听起来很简单对吧? 但实际上: 你下载了一个版本, 发现是 32 位的, 你的电脑是 64 位; 安装时忘了勾选 Add to PATH, 命令行找不到 Python; 好不容易装好了, 又发现和电脑上已有的版本冲突了; 你去网上搜解决方案, 发现 10 个教程有 10 种不同的说法. 一周过去了, 你还没写出第一行代码.
@@ -21,11 +23,15 @@ description: "通过亲手启动, 使用, 停止, 重启并删除一个 GitHub C
 3. 亲手完成一次启动, 使用, 停止和删除 codespace 的完整流程
 4. 区分 stop (停止) 和 delete (删除) 一个 codespace 分别意味着什么
 
+---
+
 ## 3. 前置知识
 
 - 一个 GitHub 账号 (免费版即可)
 - 一个网页浏览器
 - 基本的复制粘贴和点击操作能力
+
+---
 
 ## 4. 你将构建或学到什么
 
@@ -71,7 +77,7 @@ GitHub Codespaces 就是 GitHub 提供的这样一项服务. 说得具体一点,
 
 登录 GitHub, 进入你自己的任意一个 repository 页面. 在文件列表上方靠右的位置找到绿色的 Code 按钮, 点开它, 在弹出的下拉菜单里会看到 Local 和 Codespaces 两个标签, 切到 Codespaces, 然后点击绿色的 Create codespace on main.
 
-![启动 codespace](./img/02-launch-your-first-codespaces-1.png)
+![启动 codespace](./img/03-launch-your-first-codespaces-1.png)
 
 接下来等 30 秒到 2 分钟, codespace 会自动启动. 启动完成后你会看到一个代码编辑器的界面, 这就是运行在云端的 VS Code 网页版. 界面下方那块黑色区域是终端 (Terminal), 下一步会用到它.
 
@@ -103,7 +109,7 @@ cat ~/message.txt
 
 现在假设你今天不做了, 想暂时把它放下. 点击浏览器界面左下角显示的 Codespaces: xxx 字样, xxx 是 GitHub 自动生成的一个代号, 比如 "crispy broccoli". 在弹出的菜单里选择 Stop Current Codespace.
 
-![停止 codespace](./img/02-launch-your-first-codespaces-2.png)
+![停止 codespace](./img/03-launch-your-first-codespaces-2.png)
 
 也可以换个入口: 访问 [github.com/codespaces](https://github.com/codespaces), 找到你的 codespace, 点右侧的 `...` 按钮, 选 Stop codespace.
 

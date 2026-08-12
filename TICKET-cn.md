@@ -1,5 +1,5 @@
 ---
-description: "读完全部 8 个 mini task 并逐项打勾, 能不看教程独立走完一次从开 Codespace 到 PR 合并再到清理的完整开发循环, 就算完成这门课."
+description: "读完 examples 下全部 9 个 mini task 并逐项打勾, 能不看教程独立走完一次从开 Codespace 到 PR 合并再到清理的完整开发循环, 就算完成这门课."
 ---
 
 # 完成 GitHub Codespaces 入门全部课程
@@ -13,8 +13,8 @@ description: "读完全部 8 个 mini task 并逐项打勾, 能不看教程独�
 ## 2. 要做的事情
 
 1. 先读根目录的 README, 明白这门课怎么读.
-2. 读 examples 的系列索引, 对整门课有张地图, 知道 8 篇分成哪三块.
-3. 按编号顺序读完 examples 下全部 8 个 mini task, 每篇先读 README 再照它自己的 TICKET 逐项做完并确认.
+2. 读 examples 下编号 01 的系列索引, 对整门课有张地图, 知道后面的内容分成哪几块.
+3. 按编号顺序读完 examples 下全部 9 个 mini task, 每篇先读 README 再照它自己的 TICKET 逐项做完并确认.
 4. 中间几篇需要你打开自己真实的 GitHub 账号动手做, 建议边读边做, 不要先读完再回头补.
 5. 读完最后一篇梳理与拔高的内容, 想清楚自己学到了什么, 以及以后新任务该在本地做还是在云端做.
 6. 最后合上教程, 找一个自己的小仓库, 从开 Codespace 到 PR 合并再到清理, 完整走一遍.

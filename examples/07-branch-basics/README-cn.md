@@ -44,7 +44,7 @@ description: "把日常用分支时最容易卡住的六件事一次讲清: 我�
 
 答案在界面左下角. 状态栏最左边那一块, 挨着 Codespaces 名字的位置, 显示的就是你当前所在的分支.
 
-![状态栏的分支名称是所有分支操作的入口](./img/06-branch-basics-1.png)
+![状态栏的分支名称是所有分支操作的入口](./img/07-branch-basics-1.png)
 
 这一小块地方信息量比看上去大, 值得多看两眼:
 
@@ -53,7 +53,7 @@ description: "把日常用分支时最容易卡住的六件事一次讲清: 我�
 还有第二个地方也能确认, 而且很多人反而先注意到它: 终端的提示符里, 括号里的那个词就是当前分支.
 
 ```
-@machu-esc ➜ /workspaces/learn_github_tutorial-project (main) $
+@esc-johndoe1 ➜ /workspaces/learn_github_tutorial-project (main) $
 ```
 
 两个地方显示的一定是同一个分支. 养成切换之后瞄一眼左下角的习惯, 能省掉很多 "我怎么改到 main 上去了" 的意外.
@@ -78,7 +78,7 @@ description: "把日常用分支时最容易卡住的六件事一次讲清: 我�
 
 Create new branch... 直接问你要新分支的名字, 基础分支默认就是你当前所在的分支. Create new branch from... 会先让你挑一个基础分支, 然后再问名字.
 
-![Create new branch from 会先让你挑基础分支](./img/06-branch-basics-2.png)
+![Create new branch from 会先让你挑基础分支](./img/07-branch-basics-2.png)
 
 推荐一律用带 `from...` 的那个, 理由很实际: 前者默认基于当前分支, 而当前分支是什么, 恰恰是你最容易记错的事情. 一旦你人还在上个任务的 `feature-login` 分支上, 却以为自己在 `main`, 那么新建出来的分支就会带着 `feature-login` 的所有改动. 等你开 PR 的时候会发现里面混进来一堆不是你这次写的东西, 审查的人也会一头雾水.
 
@@ -140,7 +140,7 @@ Force Checkout 会先丢弃你的全部改动, 再切过去. 注意这个动作�
 
 回到状态栏上那个 `0 ↓ 1 ↑`, 现在把它读明白.
 
-![状态栏的同步指示器和 Sync Changes 按钮](./img/06-branch-basics-3.png)
+![状态栏的同步指示器和 Sync Changes 按钮](./img/07-branch-basics-3.png)
 
 `↑` 后面的数字, 是你本地已经 commit 但还没送到 GitHub 的提交数量, 图里是 1. `↓` 后面的数字, 是 GitHub 上已经有但你本地还没拿到的提交数量, 图里是 0. 方向可以这样记: 箭头朝上是往上传, 朝下是往下载.
 

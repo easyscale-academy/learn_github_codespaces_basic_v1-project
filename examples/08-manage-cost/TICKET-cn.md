@@ -27,14 +27,12 @@ Codespaces 是按需计费的云资源, 不搞清楚计费规则, 很容易要�
 
 ## 3. 检查清单
 
-- [ ] **读完教程**: 完整读完对应的 README, 理解免费额度, compute 与 storage 两种账单, Stop 与 Delete 的区别, 以及自动删除规则.
 - [ ] **算清免费额度**: 能说出 Free 账户每月是 120 个 compute 额度加 15GB storage, 且知道额度按机器核数扣, 用 2-core 折合下来只有大约 60 小时.
 - [ ] **分清两种账单**: 能解释清楚 compute 只在运行时计费, storage 只要 Codespace 存在就一直计费.
 - [ ] **知道额度不够怎么办**: 说得出升级 Pro 和按量付费两条路, 并且明白不设预算上限就等于不限额, 以及 Stop usage 那个勾选框才是真正的刹车.
 - [ ] **巡查过自己的 Codespaces**: 打开管理面板, 数清楚自己名下 Codespaces 的数量与状态, 并检查过至少一个的机器配置.
-- [ ] **练过 Stop**: 用状态栏菜单或管理面板成功 Stop 过一个 Codespace.
-- [ ] **练过 Delete**: 在确认代码已 push 之后, 成功 Delete 过一个不再需要的 Codespace.
+- [ ] **练过 Stop 和 Delete**: 成功 Stop 过一个 Codespace, 也在确认代码已 push 之后 Delete 过一个不再需要的.
+- [ ] **说得清 Stop 与 Delete 的区别**: 能用自己的话讲清楚 Stop 是暂停但仍占存储, Delete 是彻底清空且删除前必须先 push.
 - [ ] **会用最小机器创建**: 用 New with options 手动创建过一个 2-core 机器的 Codespace.
-- [ ] **理解 Stop 与 Delete 的区别**: 能用自己的话讲清楚 Stop 是暂停但仍占存储, Delete 是彻底清空且删除前必须先 push.
 - [ ] **理解自动删除规则**: 知道 Codespace 连续 30 天无操作会被自动删除, 且明白这对未推送代码的风险.
 - [ ] **养成省钱习惯**: 能说出至少三条最佳实践, 比如用完就 Stop, 用最小机器, 早 push 常 push, 定期清理.

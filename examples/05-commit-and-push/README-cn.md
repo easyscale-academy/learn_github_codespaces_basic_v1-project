@@ -39,7 +39,7 @@ Codespaces 是一个很好的实验环境, 你可以在云端随意修改代码,
 
 打开你的 Codespace, 在左侧文件浏览器中点击一个文件, 比如 `README.md`, 它会在编辑区打开.
 
-![查看初始状态](./img/04-commit-and-push-1.png)
+![查看初始状态](./img/05-commit-and-push-1.png)
 
 观察几个关键点:
 
@@ -55,7 +55,7 @@ Codespaces 是一个很好的实验环境, 你可以在云端随意修改代码,
 
 在编辑区里修改文件内容, 比如把 `v1` 改成 `v2`, 然后按 `Ctrl+S` (Mac 上是 `Cmd+S`) 保存.
 
-![修改文件并观察变化](./img/04-commit-and-push-2.png)
+![修改文件并观察变化](./img/05-commit-and-push-2.png)
 
 保存后, 观察界面上的变化:
 
@@ -71,7 +71,7 @@ Codespaces 是一个很好的实验环境, 你可以在云端随意修改代码,
 
 点击左侧活动栏的源代码管理图标 (看起来像树枝分叉的图标, 可能会显示一个蓝色数字, 表示有多少文件被修改).
 
-![打开源代码管理面板并 Stage 改动](./img/04-commit-and-push-3.png)
+![打开源代码管理面板并 Stage 改动](./img/05-commit-and-push-3.png)
 
 在 SOURCE CONTROL 面板中, 你会看到:
 
@@ -94,7 +94,7 @@ Stage 是一个中间步骤, 它让你可以选择性地决定哪些改动要包
 
 Stage 完成后, 文件会从 Changes 移动到 Staged Changes.
 
-![写 Commit 消息并提交](./img/04-commit-and-push-4.png)
+![写 Commit 消息并提交](./img/05-commit-and-push-4.png)
 
 在顶部的 Message 输入框里, 输入一段描述这次改动的消息, 例如:
 
@@ -113,7 +113,7 @@ Stage 完成后, 文件会从 Changes 移动到 Staged Changes.
 
 Commit 完成后, 界面会发生一些变化.
 
-![Push 到 GitHub](./img/04-commit-and-push-5.png)
+![Push 到 GitHub](./img/05-commit-and-push-5.png)
 
 观察几个关键点:
 

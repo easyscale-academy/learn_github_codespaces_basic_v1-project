@@ -10,6 +10,8 @@ description: "读完这个 mini task 你能认出 GitHub Codespaces (基于 VS C
 
 Codespaces 使用的是 VS Code, 也就是世界上最流行的代码编辑器. 整体布局就像一个开发者的驾驶舱, 不同的区域负责不同的功能, 一起协同工作. 这个 mini task 会带你一个区域一个区域地把它认全.
 
+---
+
 ## 2. 学习目标
 
 学完这个 mini task, 你将能够:
@@ -18,15 +20,19 @@ Codespaces 使用的是 VS Code, 也就是世界上最流行的代码编辑器. 
 2. 识别 Activity Bar, Side Bar, Editor, Terminal, 底部面板和 AI 助手面板各自的作用
 3. 在自己的 Codespace 里自信地找到日常最常用的文件浏览器, 编辑区和终端, 不再对着一堆按钮发懵
 
+---
+
 ## 3. 前置知识
 
 本教程假设你已经成功启动过至少一个 Codespace. 如果还没有, 建议先完成上一篇的实战练习, 再回来读这一篇.
 
-## 4. 你将认识到什么
+---
+
+## 4. 你将构建或学到什么
 
 这是一篇纯阅读型教程, 不需要动手操作. 下面这张图是 Codespaces 的完整界面, 接下来的每一节会从图上挑一个区域讲清楚, 你可以边读边对照着看.
 
-![界面整体布局](./img/03-codespaces-ui-1.jpeg)
+![界面整体布局](./img/04-codespaces-ui-1.jpeg)
 
 ---
 

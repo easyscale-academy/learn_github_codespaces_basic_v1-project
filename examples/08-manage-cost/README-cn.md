@@ -49,7 +49,7 @@ Codespaces 是一种典型的云服务, 它不是你买断的电脑, 而是按�
 
 这两个数字在 GitHub 自己的界面上也能查到. 打开 Settings, 进入 Billing and licensing 下面的 Licensing 页面, 就能看到当前账户的套餐和它包含的东西:
 
-![在 Licensing 页面查看当前套餐包含的额度](./img/07-manage-cost-2.png)
+![在 Licensing 页面查看当前套餐包含的额度](./img/08-manage-cost-2.png)
 
 注意图里那一行的原文是 120 core-hours, 也就是 120 个核心小时. 这个词很关键, 因为它揭示了一个几乎所有人第一次都会算错的地方: 上面那个 120 不是你能用 120 小时的意思.
 
@@ -68,7 +68,7 @@ Codespaces 是一种典型的云服务, 它不是你买断的电脑, 而是按�
 
 创建 Codespace 时, 默认会直接给你一个标准配置的环境, 但你可以主动选择更低的配置来省额度. 在任意 repository 页面点击绿色的 Code 按钮, 切换到 Codespaces 标签页, 直接点 Create codespace on main 会使用默认配置, 点旁边的 `...` 选择 New with options... 则可以自己挑.
 
-![create-codespace-with-configuration](./img/07-manage-cost-1.png)
+![create-codespace-with-configuration](./img/08-manage-cost-1.png)
 
 New with options... 里有三个值得设置的地方: Branch 决定从哪个分支创建, Region 是服务器区域, 选离自己近的延迟更低, Machine type 是机器配置, 没有特殊需求就选 2-core / 8GB RAM. 对学习和日常开发来说 2-core 完全够用, 只有跑大型构建或机器学习负载时才需要更高配置.
 
@@ -112,7 +112,7 @@ storage 按占用空间收费. 只要 Codespace 还存在, 不管是运行中还
 
 打开 Settings, 进入 Billing and licensing 下面的 Budgets and alerts 页面, 你会看到 GitHub 把这件事写得很直白:
 
-![Budgets and alerts 页面, 注意说明文字里的 unlimited](./img/07-manage-cost-3.png)
+![Budgets and alerts 页面, 注意说明文字里的 unlimited](./img/08-manage-cost-3.png)
 
 图里那句说明的原文是: 如果没有为某个产品设置 budget, 这个产品的用量就是 unlimited. 换句话说, 默认状态下你是没有刹车的. 一个忘了关的 Codespace 会一直计费, 一个月跑出几十美元并不难, 而你可能要等到账单来了才发现.
 
@@ -120,7 +120,7 @@ storage 按占用空间收费. 只要 Codespace 还存在, 不管是运行中还
 
 要新建一条预算, 点右上角的 New budget; 如果 Codespaces 已经有一条, 从它右侧的 `...` 菜单进去编辑就行. 两条路径打开的是同一个表单:
 
-![设置 Codespaces 的月度预算上限](./img/07-manage-cost-4.png)
+![设置 Codespaces 的月度预算上限](./img/08-manage-cost-4.png)
 
 表单上有几个地方需要留意:
 
