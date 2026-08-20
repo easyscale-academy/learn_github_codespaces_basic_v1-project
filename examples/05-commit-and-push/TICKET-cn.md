@@ -22,7 +22,7 @@ description: "在自己名下的仓库里完成一次完整的 Edit, Stage, Comm
 8. 刷新 GitHub 上对应仓库的页面, 确认改动确实出现在那里; 如果没看到变化, 试试强制刷新 (Windows 或 Linux 上是 `Ctrl+Shift+R`, Mac 上是 `Cmd+Shift+R`), 或者稍等几秒再试一次.
 9. 记下你这个仓库的地址, 格式类似 `https://github.com/your-username/your-repo-name`, 用于后续验收展示. 如果你名下暂时没有任何仓库, 先在 GitHub 上新建一个再开始.
 
-**预计用时:** 15 到 20 分钟
+**预计用时:** 15 到 30 分钟
 
 ---
 

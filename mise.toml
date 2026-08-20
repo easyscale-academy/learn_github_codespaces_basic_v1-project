@@ -21,4 +21,4 @@ run = "uv sync --all-extras"
 
 [tasks.lesson-smith-sync]
 description = "🔄 Snapshot README/TICKET into docs/tasks/ and rebuild SYLLABUS via lesson-smith sync"
-run = "uvx --from shsk-lesson-smith==0.2.1 lesson-smith sync -p ."
+run = "uvx --from shsk-lesson-smith==0.3.3 lesson-smith sync -p ."
