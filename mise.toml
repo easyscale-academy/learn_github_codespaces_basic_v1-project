@@ -18,7 +18,3 @@ run = "rm -r .venv"
 [tasks.inst]
 description = "💾 Install Python dependencies (dev, test, doc, etc.) via uv"
 run = "uv sync --all-extras"
-
-[tasks.lesson-smith-sync]
-description = "🔄 Snapshot README/TICKET into docs/tasks/ and rebuild SYLLABUS via lesson-smith sync"
-run = "uvx --from shsk-lesson-smith==0.3.3 lesson-smith sync -p ."
