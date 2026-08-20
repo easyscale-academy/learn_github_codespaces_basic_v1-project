@@ -21,7 +21,7 @@ Codespaces 是按需计费的云资源, 不搞清楚计费规则, 很容易要�
 7. 打开 Settings 里的 Budgets and alerts 页面看一眼, 确认自己名下有没有给 Codespaces 设过预算. 如果你打算超出免费额度继续用, 就设一条, 金额填一个能接受的数字, 并勾上 Stop usage when budget limit is reached.
 8. 用自己的话把下面四个问题的答案写下来, 准备好讲给导师或同学听: 清理前后 Codespaces 数量各是多少; 之前的 Codespaces 用的是什么机器配置, 有没有比 2-core 更大的; Stop 和 Delete 的区别用自己的话怎么说; 为什么删除前必须先 push.
 
-**预计用时:** 15 到 20 分钟
+**预计用时:** 15 到 30 分钟
 
 ---
 
